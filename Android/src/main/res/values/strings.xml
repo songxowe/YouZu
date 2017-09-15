@@ -1,0 +1,88 @@
+﻿<resources>
+  <string name="app_name">游租</string>
+  <string name="title_activity_login">LoginActivity</string>
+
+  <declare-styleable name="CircleImageView">
+    <attr name="border_width" format="dimension"/>
+    <attr name="border_color" format="color"/>
+    <attr name="border_overlay" format="boolean"/>
+  </declare-styleable>
+
+  <string name="action_refresh">刷新</string>
+  <string name="action_logout">退出</string>
+  <string name="action_settings">设置</string>
+  <string name="action_qr_code">登录与注册</string>
+  <string name="action_about">关于</string>
+
+  <string name="city_name">城市</string>
+  <string name="_collection">收藏</string>
+  <string name="_massage">消息</string>
+  <string name="_journey">旅程</string>
+
+  <string name="hint_username">用户名</string>
+  <string name="hint_realname">你的真实姓名</string>
+  <string name="hint_password">密码</string>
+  <string name="hint_tel">联系电话</string>
+  <string name="hint_age">年龄</string>
+  <string name="hint_sex">性别</string>
+  <string name="hint_question">密保问题</string>
+  <string name="hint_answer">密保答案</string>
+
+  <string name="hint_num">求租人数</string>
+  <string name="hint_">用户名</string>
+
+  <string name="user_invalid">用户名或密码错误.</string>
+  <string name="net_error">网络异常</string>
+
+  <string name="agree_articles">注册即表示我同意本APP的服务条款、隐私政策、房客退款政策、及房东保障金计划</string>
+
+  <string-array name="questions">
+    <item>你的兴趣是什么？</item>
+    <item>你的学号是多少？</item>
+    <item>你的生日是？</item>
+    <item>自定义问题</item>
+  </string-array>
+
+  <string-array name="province">
+    <item>长沙</item>
+    <item>香港</item>
+    <item>云南</item>
+    <item>拉萨</item>
+    <item>北京</item>
+    <item>杭州</item>
+    <item>上海</item>
+  </string-array>
+
+  <string-array name="price">
+    <item>请选择期望价格</item>
+    <item>0-500</item>
+    <item>500-1000</item>
+    <item>1000-1500</item>
+    <item>1500以上</item>
+  </string-array>
+
+  <string-array name="homeSizes">
+    <item>三室一厅</item>
+    <item>三室两厅</item>
+    <item>两室一厅</item>
+    <item>一室一厅</item>
+    <item>单间</item>
+  </string-array>
+
+  <string name="nav_home">如何使用本宝宝</string>
+  <string name="nav_messages">为什么要出租</string>
+  <string name="nav_lord">发布房源</string>
+  <string name="nav_friends">发布朋友圈</string>
+  <string name="nav_help">帮助</string>
+  <string name="nav_user">个人信息</string>
+
+  <string name="about_app">此APP由曾鹏，杨耽，彭浩工厂项目所做，主要用于帮助那些喜欢旅游体验当地生活的驴友寻找舒适的出租屋，版权所有，翻版必究！</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="help_message1">1.如果您要发布房源或者需要求租房间，您需要先注册或登录您的个人账户。</string>
+  <string name="help_message2">2.您可以先选择你想要去的城市，然后挑选符合您需求的房源，请自行联系房东或者您可以选择填写预定资料，我们会将您的需求发送给房东。</string>
+  <string name="help_message3">3.在发布房源的时候，请认真填写您房子的信息，可以方便你的房子被驴友更方便的找到，同时可以上传几张您房子内的美照，提高您房子被驴友看上的几率。</string>
+
+</resources>
+

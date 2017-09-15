@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HouseDetailActivity">
+
+
+  <android.support.design.widget.AppBarLayout
+      android:id="@+id/appbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorPrimary"
+        />
+  </android.support.design.widget.AppBarLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/appbar"
+      >
+
+    <LinearLayout
+        android:id="@+id/userLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+      <FrameLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/house_img_pager"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/appbar">
+        </android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/tvHousePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/yuan"
+            android:text="价格:"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@android:color/holo_orange_dark"
+            />
+
+      </FrameLayout>
+
+
+      <TextView
+          android:id="@+id/tvHouseName"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:gravity="center"
+          android:padding="5dp"
+          android:text="房子的名字"
+          android:textAppearance="?android:textAppearanceLarge"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          >
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0.1"
+            />
+
+        <TextView
+            android:id="@+id/starScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="评分:"
+            />
+      </LinearLayout>
+
+      <ImageView
+          android:id="@+id/imgUsername"
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:layout_gravity="center"
+          android:layout_margin="10dp"
+          android:src="@drawable/logo2"
+          />
+
+      <TextView
+          android:id="@+id/tvLordName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="10dp"
+          android:text="房东:"
+          android:textSize="15dp"
+          android:textAppearance="?android:textAppearance"
+          />
+
+      <TextView
+          android:id="@+id/tvHouseType"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_margin="10dp"
+          android:textSize="15dp"
+          android:text="当前状态:"
+          android:textAppearance="?android:textAppearance"
+          />
+
+
+
+      <Button
+          android:id="@+id/btnCallLord"
+          style="@style/Widget.AppCompat.Button.Borderless"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="联系房东"
+          android:textColor="@android:color/holo_red_light"
+          />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/holo_blue_light"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tvHouseSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearance"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="房子大小:"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/tvHomeSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:textAppearance="?android:textAppearance"
+                android:text="两室一厅"
+                />
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/holo_blue_light"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvHouseAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:textAppearance"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="房屋位置:"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tvHomeAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:textAppearance"
+                    android:text=""
+                    />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/holo_blue_light"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="住户评价:"
+            />
+        <ListView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="便利设施"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/holo_blue_light"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            >
+            <TextView
+                android:id="@+id/tvHouseTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/tv"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="电视"
+                />
+            <TextView
+                android:id="@+id/tvHouseKT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/conditioner"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="空调"
+                />
+            <TextView
+                android:id="@+id/tvHouseXYJ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/washer"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:text="洗衣机"
+                />
+            <TextView
+                android:id="@+id/tvHouseWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/wifi"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="WIFI"
+                />
+
+            <TextView
+                android:id="@+id/tvHouseInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/computer"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="电脑"
+                />
+
+            <TextView
+                android:id="@+id/tvHouseBX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icebox"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="冰箱"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/holo_blue_light"
+            />
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="相关房源:"
+            android:textAppearance="?android:textAppearanceLarge"
+            />
+
+        <ListView
+            android:id="@+id/likeListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearance"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearance"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:textAppearance"
+            />
+
+    </LinearLayout>
+  </ScrollView>
+
+
+
+
+  <Button
+      android:id="@+id/btnBooked"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginTop="5dp"
+      android:background="@color/colorPrimary"
+      android:gravity="center"
+      android:onClick="onClick"
+      android:text="申请预定"
+      android:textAppearance="?android:textAppearanceLarge"
+      android:textColor="@color/window_background"
+      />
+
+</RelativeLayout>

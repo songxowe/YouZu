@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/girl"
+              tools:context="android.com.changyou.fragment.PersonalMessageFragment">
+    <Button
+        android:id="@+id/changePass"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:onClick="changePassword"
+        android:textAppearance="?android:textAppearance"
+        android:text="修改密码"
+        />
+
+
+
+
+    <ImageView
+      android:id="@+id/userImg"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_gravity="center"
+      android:layout_marginTop="50dp"
+      android:src="@drawable/logo2"/>
+
+  <LinearLayout
+      android:layout_width="320dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="20dp"
+      android:layout_marginBottom="5dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="用户账号:"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="username"
+
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="320dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginBottom="5dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/white"
+        android:text="用户类型:"
+
+        />
+
+    <TextView
+        android:id="@+id/txtModel"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Model"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="320dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginBottom="5dp"
+      android:gravity="center"
+      android:orientation="horizontal"
+      >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"
+        android:text="用户姓名:"
+        />
+
+    <TextView
+        android:id="@+id/txtRealName"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="realName"
+        android:textAppearance="?android:textAppearanceLarge"
+        />
+
+
+  </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/passLinear"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="修改密码:"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:textAppearance"
+            />
+
+    <EditText
+        android:id="@+id/newPass"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:hint="新密码"
+        android:textColorHint="@android:color/white"
+        />
+
+    <EditText
+        android:id="@+id/newPass2"
+        android:layout_width="240dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:hint="确认新密码"
+        />
+
+    <Button
+        android:id="@+id/change"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:textAppearance"
+        android:textColor="@android:color/white"
+        android:text="确认修改"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

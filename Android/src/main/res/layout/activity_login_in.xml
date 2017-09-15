@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/home_img"
+              android:orientation="vertical"
+              tools:context=".LoginActivity">
+
+  <RelativeLayout
+      android:id="@+id/topBar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/height_top_bar"
+      android:layout_alignParentTop="true"
+      >
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        style="@android:style/Widget.Holo.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:src="@drawable/left"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btnBack"
+        android:text="账号登录"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="18sp"/>
+  </RelativeLayout>
+
+  <Button
+      android:id="@+id/btnLoginUp"
+      style="?android:borderlessButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:onClick="onClick"
+      android:textColor="@android:color/white"
+      android:text="注册"
+      />
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="110dp"
+      android:layout_marginTop="50dp"
+      android:src="@drawable/logo4"
+      />
+
+
+  <LinearLayout
+      android:layout_width="320dp"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:background="@android:color/white"
+      android:orientation="horizontal"
+      android:layout_marginBottom="10dp"
+      >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/user_png_24px"
+        />
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_username"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="320dp"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:layout_marginTop="10dp"
+      android:background="@android:color/white"
+      android:orientation="horizontal"
+      >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lock_24px"
+        />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        >
+
+      <EditText
+          android:id="@+id/txtPassword"
+          android:layout_width="280dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/height_margin_top"
+          android:hint="@string/hint_password"
+          android:inputType="textPassword"/>
+
+      <ImageButton
+          android:id="@+id/imgPassword"
+          style="@style/Base.Widget.AppCompat.Button.Borderless"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="right"
+          android:onClick="onClick"
+          android:src="@drawable/amg"/>
+    </FrameLayout>
+
+  </LinearLayout>
+
+
+
+  <Button
+      android:id="@+id/btn_login"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="15dp"
+      android:background="@color/colorPrimaryDark"
+      android:text="登录"
+      android:onClick="onClick"
+      android:textColor="@android:color/white"
+      android:textSize="18sp"/>
+
+
+  <Button
+      android:id="@+id/btnForget"
+      style="?android:borderlessButtonStyle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right"
+      android:onClick="onClick"
+      android:textColor="@android:color/holo_red_dark"
+      android:text="忘记密码?"
+      />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="android.com.changyou.fragment.HelpNewFragment">
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="fitXY"
+      android:src="@drawable/home2"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo4"/>
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="无论在哪里旅行，你都能像当地人一样生活"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="从别墅到树屋,各式各样的房源供您挑选"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="合租或独享资源,加入这个由旅游者和房东组成的大家庭"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@android:color/white"
+        />
+  </LinearLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+      <Button
+          android:id="@+id/LoginUp"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:onClick="onClick"
+          android:background="@color/colorPrimary"
+          android:textColor="@android:color/white"
+          android:text="注册"
+          />
+
+      <Button
+          android:id="@+id/LoginIn"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:onClick="onClick"
+          android:background="@color/colorPrimary"
+          android:textColor="@android:color/white"
+          android:text="登录"
+          />
+    </LinearLayout>
+  </RelativeLayout>
+</FrameLayout>
